@@ -9,7 +9,7 @@ motion_senser = MotionSensor(4)
 b = TonalBuzzer(17)
 
 
-def play_sound(devide: int, tone: str = None):
+def play_sound(devide: int, tone: str | None = None):
     if tone is not None:
         b.play(Tone(tone))
     else:
@@ -64,3 +64,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+    b = 1
